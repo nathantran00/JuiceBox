@@ -1,2 +1,2 @@
 # JuiceBox
- A landing page for a fictional box wine company, made with TailWind
+ A landing page for a fictional box wine company, made with Tailwind
