@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <title>JuiceBox: Wine Boxed-Up</title>
+
+    <link rel="stylesheet" href="../dist/styles.css" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+    <script src="https://kit.fontawesome.com/b46b0180ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="bg-off-white">
+        <header class="text-white p-4 relative">
+            <div class="container mx-auto flex flex-wrap justify-between items-center p-4">
+                <a href="#" class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
+                    <img src="assets/img/logo.svg" alt="JuiceBox Logo" class="h-16 sm:h-16 md:h-20 lg:h-24" />
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex md:space-x-4 lg:space-x-6">
+                    <ul class=" flex space-x-4">
+                        <a href="#about"
+                            class="block rounded-full bg-pinkish-red px-4 py-1 text-sm md:text-base lg:text-lg xl:px-6 xl:py-2 xl:text-xl  text-white hover:bg-maroon hover:text-off-white transition">
+                            <li>About</li>
+                        </a>
+                        <a href="#reviews"
+                            class="block rounded-full bg-pinkish-red px-4 py-1 text-sm md:text-base lg:text-lg xl:px-6 xl:py-2 xl:text-xl  text-white hover:bg-maroon hover:text-off-white transition">
+                            <li>Reviews</li>
+                        </a>
+                        <a href="#contact"
+                            class="block rounded-full bg-pinkish-red px-4 py-1 text-sm md:text-base lg:text-lg xl:px-6 xl:py-2 xl:text-xl  text-white hover:bg-maroon hover:text-off-white transition">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </nav>
+
+                <!-- Mobile menu trigger -->
+                <button class="md:hidden text-pinkish-red transition p-2 rounded" id="mobile-menu-button">
+                    <i class="fas fa-bars text-4xl"></i>
+                </button>
+
+
+
+
+                <!-- Buy Now -->
+                <a href="#buy"
+                    class="bg-maroon text-off-white px-4 py-3 rounded hover:bg-pinkish-red hover:white  transition">
+                    Buy Now
+                </a>
+            </div>
+        </header>
+
+        <!-- Mobile Navigation Menu -->
+
+        <div class="hidden text-center absolute bottom-94 left-1/2 transform -translate-x-1/2 mt-2 w-full transition-transform"
+            id="mobile-menu">
+            <ul class="w-1/2 mx-auto z-50">
+                <a href="#about"
+                    class="block rounded-full bg-pinkish-red px-4 py-3 my-2 text-white hover:bg-maroon hover:text-off-white transition">
+                    <li>About</li>
+                </a>
+                <a href="#reviews"
+                    class="block rounded-full bg-pinkish-red px-4 py-3 my-2 text-white hover:bg-maroon hover:text-off-white transition">
+                    <li>Reviews</li>
+                </a>
+                <a href="#contact"
+                    class="block rounded-full bg-pinkish-red px-4 py-3 my-2 text-white hover:bg-maroon hover:text-off-white transition">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- about information -->
+        <section id="about" class="py-12 bg-maroon">
+            <div class="container mx-auto flex flex-wrap items-center">
+                <div class="w-full md:w-1/2 p-4 h-[75vh]">
+                    <model-viewer src="assets/img/3D.glb" alt="JuiceBox Wine 3D Model" lighting="white 1"
+                        shadow-intensity="1" shadow-softness="1" camera-orbit="45deg 85deg 4m" disable-zoom ar
+                        ar-modes="scene-viewer quick-look" auto-rotate auto-rotate-delay="1000" camera-controls
+                        class="rounded-lg shadow-lg border-4 border-pinkish-red w-full h-full"
+                        style="filter: brightness(0.9) contrast(0.9);"></model-viewer>
+
+
+
+                </div>
+
+                <div class="w-full md:w-1/2 p-4">
+                    <h1 class="font-labelle text-pinkish-red text-5xl font-bold mb-4">Our Signature Wine</h1>
+                    <p class="text-white text-lg mb-4">Ideal for every vibe, from chill hangouts to grand celebrations,
+                        <span class="font-labelle text-2xl text-pinkish-red">Rouge</span> is encased in eco-friendly
+                        carton packaging, crafted from 100% natural ingredients, ensuring a delightful and responsible
+                        choice for every occasion.
+                    </p>
+
+
+                    <ul class="text-white list-disc pl-5 space-y-2">
+                        <li><span class="font-labelle text-pinkish-red text-lg">100% Natural Ingredients:</span> We’re
+                            all about authenticity and quality, ensuring every sip is free from artificial stuff.</li>
+                        <li><span class="font-labelle text-pinkish-red text-lg">Bold and Rich Flavors:</span> Dive into
+                            a world of intricate flavors that dance on your palate and leave a memorable aftertaste.
+                        </li>
+                        <li><span class="font-labelle text-pinkish-red text-lg">Elegantly Packaged:</span> Our bottles
+                            are a work of art, showcasing the exquisite wine within and making a statement on any shelf.
+                        </li>
+                        <li><span class="font-labelle text-pinkish-red text-lg">Vegan-Friendly:</span> Crafted with
+                            compassion, our wine is ready to be enjoyed by all, embracing diverse lifestyle choices.
+                        </li>
+                        <li><span class="font-labelle text-pinkish-red text-lg">Perfect for Gifting:</span> Whether it’s
+                            a birthday, anniversary, or just because, JuiceBox is the gift that keeps on giving.</li>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="Testimonials" class="py-12 bg-off-white">
+            <div class="container mx-auto text-center">
+                <h2 class="font-labelle text-4xl text-pinkish-red font-bold mb-8">What Our Customers Say</h2>
+                <!-- Slick carousel -->
+                <div class="testimonial-slider mb-0 relative flex items-stretch space-x-4 snap-x snap-mandatory">
+                    <!-- Previous Button -->
+                    <button class="">
+
+                    </button>
+
+                    <div class="testimonial-card p-6 h-full">
+                        <p class="text-lg mb-4">"This wine is a total game changer! It’s got this rich, full-bodied
+                            flavor that just blows my mind. Plus, it’s perfect for any occasion!"</p>
+                        <p class="font-bold">- Riley O’Connor, British Columbia</p>
+                    </div>
+                    <div class="testimonial-card p-6 h-full">
+                        <p class="text-lg mb-4">"Je suis entièrement attaché à cette vie écologique, et JuiceBox
+                            comprend parfaitement. Le packaging est au top, et le vin ? Bisou du chef ! Divin!"</p>
+                        <p class="font-bold">- Alex Tremblay, Quebéc</p>
+                    </div>
+                    <div class="testimonial-card p-6 h-full">
+                        <p class="text-lg mb-4">"When I bring JuiceBox to the party, I know it’s gonna be a hit. It’s
+                            like, the ultimate crowd-pleaser!"</p>
+                        <p class="font-bold">- Jordan Singh, Ontario</p>
+                    </div>
+                    <div class="testimonial-card p-6 h-full">
+                        <p class="text-lg mb-4">"Obsessed with the bold vibes of this wine, and the fact that it’s made
+                            with all-natural ingredients? Yes, please!"</p>
+                        <p class="font-bold">- Morgan Li, Alberta</p>
+                    </div>
+                    <div class="testimonial-card p-6 h-full">
+                        <p class="text-lg mb-4">"It’s so hard to find a wine that’s both delish and aligns with my
+                            values. JuiceBox? Nailed it!"</p>
+                        <p class="font-bold">- Jamie Patel, Manitoba</p>
+                    </div>
+                    <div class="testimonial-card p-6 h-full">
+                        <p class="text-lg mb-4">"JuiceBox is my go-to for those chill, unwind moments. The flavors?
+                            Exquisite. It’s like a hug in a glass."</p>
+                        <p class="font-bold">- Taylor Wong, Saskatchewan</p>
+                    </div>
+                    <button class=""></button>
+
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" class="px-4 py-12 bg-maroon">
+            <div class="container mx-auto text-center">
+                <h2 class="font-labelle text-4xl text-pinkish-red font-bold mb-8">Let's Connect</h2>
+                <p class="text-lg text-off-white mb-8">Got questions, wanna buy wine in bulk or just wanna chat? Drop us
+                    a line and let's make something awesome happen!</p>
+
+
+                <!-- Contact Form -->
+                <form action="#" method="POST" class="max-w-md mx-auto">
+                    <div class="mb-4">
+                        <label for="name"
+                            class="font-labelle text-off-white block text-2xl font-bold mb-2 text-left text-pinkish-red">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-pinkish-red focus:ring-1 focus:ring-pinkish-red">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email"
+                            class="font-labelle text-off-white block text-2xl font-bold mb-2 text-left text-pinkish-red">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-pinkish-red focus:ring-1 focus:ring-pinkish-red">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message"
+                            class="font-labelle text-off-white block text-2xl font-bold mb-2 text-left text-pinkish-red">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-pinkish-red focus:ring-1 focus:ring-pinkish-red"></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit"
+                            class="bg-pinkish-red text-off-white px-6 py-2 rounded hover:bg-maroon transition">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="bg-pinkish-red text-off-white py-6">
+            <div class="container p-4 px-6 mx-auto rounded-lg text-center border-4 border-maroon">
+                <div class="mb-4">
+                    <h3 class="text-4xl font-bold mt-4 mb-2 font-labelle">Stay Connected</h3>
+                    <p>Follow us on our social media channels for the latest updates:</p>
+                </div>
+                <!-- Socials -->
+                <div class="mb-6">
+                    <a href="https://facebook.com" class="text-off-white hover:text-pinkish-red transition mx-2"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="text-off-white hover:text-pinkish-red transition mx-2"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" class="text-off-white hover:text-pinkish-red transition mx-2"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+
+
+                <!-- Footer nav -->
+                <div class="mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Quick Links</h3>
+                    <nav>
+                        <ul class="flex justify-center space-x-4">
+                            <li><a href="#about" class="hover:text-pinkish-red transition">About</a></li>
+                            <li><a href="#reviews" class="hover:text-pinkish-red transition">Reviews</a></li>
+                            <li><a href="#contact" class="hover:text-pinkish-red transition">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Copyright -->
+                <div class="mb-6">
+                    <p>&copy; 2023 JuiceBox. All rights reserved.</p>
+                    <p><a href="#privacy-policy" class="hover:text-pinkish-red transition">Privacy Policy</a> | <a
+                            href="#terms-of-service" class="hover:text-pinkish-red transition">Terms of Service</a></p>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+        <script type="module"
+            src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+
+        <script src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="slick.js"></script>
+
+</body>
+
+</html>
