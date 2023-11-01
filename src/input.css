@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply block rounded-full bg-pinkish-red px-4 py-1 text-sm md:text-base lg:text-lg xl:px-6 xl:py-2 xl:text-xl  text-off-white hover:bg-maroon hover:text-off-white transition;
+  }
+  .header-logo {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold;
+  }
+  .header-logo-image {
+    @apply h-16 sm:h-16 md:h-20 lg:h-24;
+  }
+  .section-title {
+    @apply font-labelle text-center text-4xl font-bold mb-8;
+  }
+  .testimonial-card {
+    @apply p-6 h-full flex flex-col;
+  }
+  .form-label {
+    @apply font-labelle text-off-white block text-2xl font-bold mb-2 text-left text-pinkish-red;
+  }
+  .testimonial-quote {
+    @apply text-lg mb-4 flex-grow;
+  }
+}
